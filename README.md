@@ -40,6 +40,21 @@ exit
 
 ---
 
+### Protocol for message content "talk_protocol"
+
+- Shannon communication theorie has been implemented in this project. 
+
+```shell=
+
+Source(message) ---> encodage ---> emetteur ---> canal ---> receptor ---> decodage ---> destination
+     I/O      "hello"       010101  SIGUSR1     POSIX4.0     signal()   0101001:"hello"     I/O  
+
+```
+
+- Inference of 7 bits without acknoledgment of receipt.
+
+---
+
 ## Usage
 
 - Clone repository
